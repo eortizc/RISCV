@@ -15,7 +15,8 @@ int main(int argc, char** argv, char** env)
   top->trace(vcddump, 99);
   vcddump->open("simx.vcd");
 	//while(!Verilated::gotFinish()) {top->eval();}
-  memory[0] = 0b00000000000100000000000100110011;
+	memory[0] = 0b00000000010100000000000010010011;
+  memory[4] = 0b00000000000100000000000100110011;
   while(1)
   {
     main_time +=1;
